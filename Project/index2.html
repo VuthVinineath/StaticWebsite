@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <section id="Testimonial">
+
+        <!--swap left slider start-->
+        <div class="slider">
+            <div class="slides">
+
+                <!--radio buttons start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <!--radio buttons end-->
+
+                <!--slide start here-->
+                <div class="slide first">
+                    <!--1st Start Main Row-->
+                    <div class="main-row">
+                        <!--1st Sub row start-->
+                        <div class="sub-row">
+                        <!--Text column start-->
+                        <div class="text-column">
+                        <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet</p>
+                        <h3>Johnathan Doe</h3>
+                    </div>
+                    <!--Text column end-->
+           
+                    <!--Text column start-->
+                    <div class="text-column">
+                        <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet</p>
+                        <h3>Johny David</h3>
+                    </div>
+                    <!--Text column end-->
+                    </div>
+                    <!--2nd Sub row end-->
+                </div>
+                <!--1st end Main Row-->
+
+                </div>
+
+                <div class="slide">
+                    <!--2nd Start Main Row-->
+                    <div class="main-row">
+                        <!--1st Sub row start-->
+                        <div class="sub-row">
+                            <!--Text column start-->
+                            <div class="text-column">
+                                <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet</p>
+                                <h3>Johnathan Doe</h3>
+                            </div>
+                            <!--Text column end-->
+                       
+                            <!--Text column start-->
+                            <div class="text-column">
+                                <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet</p>
+                                <h3>Johny David</h3>
+                            </div>
+                            <!--Text column end-->
+                        </div>
+                        <!--2nd Sub row end-->
+                    </div>
+                    <!--2nd end Main Row-->
+                    
+                </div>
+
+                <div class="slide">
+                    <!--3rd Start Main Row-->
+                    <div class="main-row">
+                        <!--1st Sub row start-->
+                        <div class="sub-row">
+                            <!--Text column start-->
+                            <div class="text-column">
+                                <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet</p>
+                                <h3>Johnathan Doe</h3>
+                            </div>
+                            <!--Text column end-->
+                        
+                            <!--Text column start-->
+                            <div class="text-column">
+                                <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet</p>
+                                <h3>Johny David</h3>
+                            </div>
+                            <!--Text column end-->
+                        </div>
+                        <!--2nd Sub row end-->
+                    </div>
+                    <!--3rd end Main Row-->  
+                </div>
+                <!--slide end here-->
+
+                <!--automatic navigator start here-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <!--automatic navigator end here-->
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+        <!--swap left slider end-->
+        <script>
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked=true;
+                counter++;
+                if(counter>3){
+                    counter=1;
+                }
+            },5000);
+        </script>
+    </section>
+</body>
+</html>
